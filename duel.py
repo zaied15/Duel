@@ -51,5 +51,16 @@ def takeCommand():
         return "None"
     return query
 
+# Greetings function
+def greeting():
+    hour = (datetime.datetime.now().hour)
+    if hour>=0 and hour<12:
+        speak("Good Morning sir! How are you doing?")
+    elif hour>=12 and hour<=18:
+        speak("Good Afternoon sir! How are you doing?")
+    else:
+        speak("Good Evening sir! How are you doing?")
+
+    speak("I am Duel. Please tell me how may I help you today?")
 
 
